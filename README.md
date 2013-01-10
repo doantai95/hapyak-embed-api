@@ -13,6 +13,16 @@ hapyak.viewer({
     autoplay: true
 });
 ```
+####
+
+**player**
+
+Reference to the player DOM node, Javascript object, Flash file. 
+HapYak will attempt to auto discover the type of the video from this parameter.
+
+**playerType**
+
+Gives HapYak a hint as to what type of **player** was passed in.
 
 ### Editor API
 
