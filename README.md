@@ -2,6 +2,10 @@
 
 ## Viewer API
 
+```html
+<script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
+```
+
 ### Example 
 
 ```javascript
