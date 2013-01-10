@@ -6,6 +6,13 @@ Include the following javascript reference in your project.
 <script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
 ```
 
+## Global Options
+
+**apiKey**
+
+If you have a HapYak API key, pass it in to each API call in this parameter.
+
+
 ## Viewer API
 
 The HapYak annotation viewer supports viewing annotations for an existing video
@@ -25,10 +32,6 @@ hapyak.viewer({
 });
 ```
 ### Options
-
-**apiKey**
-
-If you have a HapYak API key, pass it in via this parameter.
 
 **player**
 
@@ -63,6 +66,9 @@ has been downloaded from hapyak.com.
 
 ## Editor API
 
+The HapYak annotation editor will drop an IFRAME based embedded editor into
+the page, under the element passed in with elementId.
+
 ### Example 
 
 ```javascript
@@ -85,6 +91,25 @@ hapyak.editor({
 **elementId**
 
 The ID of the element to drop the HapYak editor iframe into.
+
+**playerWidth (optional)**
+
+The width of the IFRAME editor element to create.
+
+**videoSource**
+
+The type of video to load. Valid values can be "youtube", "vimeo", "html5".
+
+**videoSourceId**
+
+The ID/URL of the video to load. If **videoSource** is set to "youtube" for example,
+this parameter would be the YouTube video id. If set to "html5", this would be
+the URL to the video.
+
+**onNewTrack**
+
+If a new track is created by the editor, this callback will be passed the new trackId.
+This allows you to store this trackId and use it with **.viewer** API calls.
 
 ## Demos
 
