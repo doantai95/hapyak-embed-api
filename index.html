@@ -1,87 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>HapYak API by hapyak</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="documentup.min.js"></script>
+    <script>
+      DocumentUp.document("username/repository");
+    </script>
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>HapYak API</h1>
-        <p>HapYak API Repository</p>
-
-        <p class="view"><a href="https://github.com/hapyak/hapyak-api">View the Project on GitHub <small>hapyak/hapyak-api</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/hapyak/hapyak-api/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/hapyak/hapyak-api/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/hapyak/hapyak-api">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>HapYak API</h1>
-
-<h2>Viewer API</h2>
-
-<h3>Example</h3>
-
-<div class="highlight"><pre><span class="nx">hapyak</span><span class="p">.</span><span class="nx">viewer</span><span class="p">({</span>
-    <span class="nx">player</span><span class="o">:</span> <span class="nx">vjs</span><span class="p">,</span>
-    <span class="nx">playerType</span><span class="o">:</span> <span class="s2">"videojs"</span><span class="p">,</span>
-    <span class="nx">playerWidth</span><span class="o">:</span> <span class="mi">640</span><span class="p">,</span>
-    <span class="nx">playerHeight</span><span class="o">:</span> <span class="mi">360</span><span class="p">,</span>
-    <span class="nx">trackId</span><span class="o">:</span> <span class="p">,</span>
-    <span class="nx">autoplay</span><span class="o">:</span> <span class="kc">true</span>
-<span class="p">});</span>
-</pre></div>
-
-<h3>Options</h3>
-
-<p><strong>player</strong></p>
-
-<p>Reference to the player DOM node, Javascript object, Flash file. 
-HapYak will attempt to auto discover the type of the video from this parameter.</p>
-
-<p><strong>playerType</strong></p>
-
-<p>Gives HapYak a hint as to what type of <strong>player</strong> was passed in.</p>
-
-<h2>Editor API</h2>
-
-<h3>Example</h3>
-
-<div class="highlight"><pre><span class="nx">hapyak</span><span class="p">.</span><span class="nx">editor</span><span class="p">({</span>
-    <span class="c1">// rootUrl: 'http://dev.hapyak.com',</span>
-    <span class="nx">elementId</span><span class="o">:</span> <span class="s1">'hapyak-editor-test'</span><span class="p">,</span>
-    <span class="nx">playerWidth</span><span class="o">:</span> <span class="mi">560</span><span class="p">,</span>
-    <span class="nx">videoSource</span><span class="o">:</span> <span class="s1">'html5'</span><span class="p">,</span>
-    <span class="nx">videoSourceId</span><span class="o">:</span> <span class="s1">'http://cloudfront.net/videos/video.mp4'</span><span class="p">,</span>
-    <span class="nx">onNewTrack</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">trackId</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hapyak.editor.onNewTrack reported to parent page ['</span> <span class="o">+</span> <span class="nx">trackId</span> <span class="o">+</span> <span class="s1">']'</span><span class="p">);</span>
-    <span class="p">},</span>
-    <span class="nx">onSave</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">trackId</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hapyak.editor.onSave reported to parent page ['</span> <span class="o">+</span> <span class="nx">trackId</span> <span class="o">+</span> <span class="s1">']'</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">});</span>
-</pre></div>
-
-<h3>Options</h3>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/hapyak">hapyak</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  <body></body>
 </html>
