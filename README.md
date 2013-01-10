@@ -1,4 +1,7 @@
-hapyak-public
-=============
+# HapYak API
 
-HapYak Public Repository
+## Javascript API
+
+### Viewer API
+
+Test
