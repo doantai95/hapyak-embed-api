@@ -135,7 +135,7 @@ When a save successfully finishes, this callback is called.
 If a new track is created by the editor, this callback will be passed the new trackId.
 This allows you to store this trackId and use it with **.viewer** API calls.
 
-#### Additional Advanced Options
+### Advanced Options
 
 **userId (optional, requires api key)**
 
