@@ -48,7 +48,9 @@ hapyak.editor({
 ```
 ### Options
 
-  
+**elementId**
+
+The ID of the element to drop the HapYak editor iframe into.
 
 ## Demos
 
