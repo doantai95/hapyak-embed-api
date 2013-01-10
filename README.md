@@ -13,7 +13,7 @@ hapyak.viewer({
     autoplay: true
 });
 ```
-####
+#### Options
 
 **player**
 
