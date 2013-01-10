@@ -75,7 +75,7 @@ the page, under the element passed in with elementId.
 hapyak.editor({
     // rootUrl: 'http://dev.hapyak.com',
 	elementId: 'hapyak-editor-test',
-	playerWidth: 560,
+	width: 560,
 	videoType: 'html5',
 	videoUrl: 'http://cloudfront.net/videos/video.mp4',
 	onNewTrack: function (trackId) {
