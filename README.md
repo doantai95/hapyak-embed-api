@@ -22,15 +22,27 @@ is passed into the viewer API method call.
 ### Example 
 
 ```javascript
+ytPlayer = new YT.Player('video', {
+  height: '390',
+  width: '640',
+  videoId: 'u1zgFlCw8Aw',
+  playerVars: {
+    html: 1,
+    wmode: 'opaque'
+  }
+});
+
 hapyak.viewer({
-    player: vjs,
-    playerType: "videojs",
+    player: ytPlayer,
+    playerType: "youtube",
     playerWidth: 640,
     playerHeight: 360,
-    trackId: ,
+    trackId: 640,
     autoplay: true
 });
 ```
+
+
 ### Options
 
 **player**
