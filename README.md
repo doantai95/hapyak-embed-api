@@ -16,14 +16,38 @@ hapyak.viewer({
 ```
 ### Options
 
+**apiKey**
+
+If you have a HapYak API key, pass it in via this parameter.
+
 **player**
 
 Reference to the player DOM node, Javascript object, Flash file. 
-HapYak will attempt to auto discover the type of the video from this parameter.
 
 **playerType**
 
-Gives HapYak a hint as to what type of **player** was passed in.
+Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5"
+
+**playerWidth (optional)**
+
+Tells HapYak the width of the player object. Optional, but the viewer may not always be
+able to figure out the right sizing.
+
+**playerHeight (optional)**
+
+Tells HapYak the height of the player object. Optional, but the viewer may not always be
+able to figure out the right sizing.
+
+**trackId**
+
+The ID of the HapYak commentary track to load. A HapYak "track" is the container
+for popup, drawing, audio, etc, commentary.
+
+**autoplay**
+
+If set to true, the video with commentary will start to play once the video is loaded, and the track
+has been downloaded from hapyak.com.
+
 
 ## Editor API
 
