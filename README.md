@@ -1,12 +1,16 @@
 # HapYak Javascript Embed API
 
-## Viewer API
-
 Include the following javascript reference in your project.
 
 ```html
 <script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
 ```
+
+## Viewer API
+
+The HapYak annotation viewer supports viewing annotations for an existing video
+element on a page. The existing video javascript object, iframe, html element, etc
+is passed into the viewer API method call.
 
 ### Example 
 
