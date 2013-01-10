@@ -3,5 +3,13 @@
 ## Javascript API
 
 ### Viewer API
-
-Test
+```javascript
+hapyak.viewer({
+    player: vjs,
+    playerType: "videojs",
+    playerWidth: 640,
+    playerHeight: 360,
+    trackId: ,
+    autoplay: true
+});
+```
