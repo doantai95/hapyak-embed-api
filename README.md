@@ -1,4 +1,4 @@
-# HapYak API
+# HapYak Javascript Embed API
 
 ## Viewer API
 
