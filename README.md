@@ -10,7 +10,7 @@ Include the following javascript reference in your project.
 
 **apiKey**
 
-If you have a HapYak API key, pass it in to each API call in this parameter.
+If you have a HapYak API key, pass it in to each API call with this parameter.
 
 
 ## Viewer API
@@ -56,7 +56,7 @@ able to figure out the right sizing.
 The ID of the HapYak commentary track to load. A HapYak "track" is the container
 for popup, drawing, audio, etc, commentary.
 
-**autoplay**
+**autoplay (optional)**
 
 If set to true, the video with commentary will start to play once the video is loaded, and the track
 has been downloaded from hapyak.com.
@@ -106,15 +106,15 @@ The ID/URL of the video to load. If **videoSource** is set to "youtube" for exam
 this parameter would be the YouTube video id. If set to "html5", this would be
 the URL to the video.
 
-**save**
+**save (optional)**
 
 Tells the editor to commit the changes the user has made.
 
-**onSave**
+**onSave (optional)**
 
 When a save successfully finishes, this callback is called.
 
-**onNewTrack**
+**onNewTrack (optional)**
 
 If a new track is created by the editor, this callback will be passed the new trackId.
 This allows you to store this trackId and use it with **.viewer** API calls.
