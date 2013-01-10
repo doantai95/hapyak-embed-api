@@ -2,6 +2,8 @@
 
 ## Viewer API
 
+Include the following javascript reference in your project.
+
 ```html
 <script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
 ```
