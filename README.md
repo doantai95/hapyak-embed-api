@@ -135,6 +135,19 @@ When a save successfully finishes, this callback is called.
 If a new track is created by the editor, this callback will be passed the new trackId.
 This allows you to store this trackId and use it with **.viewer** API calls.
 
+#### Additional Advanced Options
+
+**userId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a userId. The userId should be some
+string identifier for one of your end users.
+
+**groupId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a groupId. The groupId should
+represent some subgroup of your end users.
+
+
 ## Demos
 
 * [YouTube viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html)
