@@ -1,6 +1,9 @@
 # HapYak API
 
 ## Viewer API
+
+### Example 
+
 ```javascript
 hapyak.viewer({
     player: vjs,
@@ -23,6 +26,8 @@ HapYak will attempt to auto discover the type of the video from this parameter.
 Gives HapYak a hint as to what type of **player** was passed in.
 
 ## Editor API
+
+### Example 
 
 ```javascript
 hapyak.editor({
