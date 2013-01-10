@@ -106,6 +106,14 @@ The ID/URL of the video to load. If **videoSource** is set to "youtube" for exam
 this parameter would be the YouTube video id. If set to "html5", this would be
 the URL to the video.
 
+**save**
+
+Tells the editor to commit the changes the user has made.
+
+**onSave**
+
+When a save successfully finishes, this callback is called.
+
 **onNewTrack**
 
 If a new track is created by the editor, this callback will be passed the new trackId.
