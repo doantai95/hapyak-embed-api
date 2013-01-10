@@ -2,6 +2,12 @@
 
 ## Viewer API
 
+Include the following javascript reference in your project.
+
+```html
+<script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
+```
+
 ### Example 
 
 ```javascript
@@ -49,6 +55,8 @@ If set to true, the video with commentary will start to play once the video is l
 has been downloaded from hapyak.com.
 
 
+  
+
 ## Editor API
 
 ### Example 
@@ -69,3 +77,11 @@ hapyak.editor({
 });
 ```
 ### Options
+
+**elementId**
+
+The ID of the element to drop the HapYak editor iframe into.
+
+## Demos
+
+* http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html
