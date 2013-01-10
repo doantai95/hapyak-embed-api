@@ -92,18 +92,22 @@ hapyak.editor({
 
 The ID of the element to drop the HapYak editor iframe into.
 
-**playerWidth (optional)**
+**width (optional)**
 
 The width of the IFRAME editor element to create.
 
-**videoSource**
+**videoType**
 
 The type of video to load. Valid values can be "youtube", "vimeo", "html5".
 
-**videoSourceId**
+**videoId**
 
-The ID/URL of the video to load. If **videoSource** is set to "youtube" for example,
-this parameter would be the YouTube video id. If set to "html5", this would be
+The ID of the video to load. If **videoType** is set to "youtube" for example,
+this parameter would be the YouTube video id.
+
+**videoURL**
+
+The URL of the video to load. If **videoType** is set to "html5", this would be
 the URL to the video.
 
 **save (optional)**
