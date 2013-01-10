@@ -45,3 +45,7 @@ hapyak.editor({
 });
 ```
 ### Options
+
+## Demos
+
+* http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html
