@@ -125,4 +125,4 @@ This allows you to store this trackId and use it with **.viewer** API calls.
 
 ## Demos
 
-* http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html
+* YouTube viewer demo: http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html
