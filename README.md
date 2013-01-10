@@ -3,7 +3,7 @@
 Include the following javascript reference in your project.
 
 ```html
-<script src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
+<script src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
 ```
 
 ## Global Options
