@@ -2,23 +2,10 @@
   <head>
     <script src="http://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="http://hapyak-staging-assets.s3.amazonaws.com/js/hapyak.gz.js"></script>
-    <!--
-    <script src="../popcorn/popcorn.js"></script>
-    <script src="../popcorn/popcorn._MediaElementProto.js"></script>
-    <script src="../popcorn/popcorn.HTMLYouTubeVideoElement.js"></script>
-  -->
+
     <script>
       window.onYouTubeIframeAPIReady = function () {
-        var ytPlayer,
-          player1,
-          player2,
-          player3,
-            popcorn;
-
-        //player3 = Popcorn.HTMLYouTubeVideoElement( '#video' );
-        //player3.src = 'http://youtube.com/watch?v=u1zgFlCw8Aw';
-
-        ytPlayer = new YT.Player('video', {
+        var ytPlayer = new YT.Player('video', {
           height: '390',
           width: '640',
           videoId: 'u1zgFlCw8Aw',
@@ -28,21 +15,15 @@
           }
         });
 
-        var hapyakApiKey = "foobar",
-            hapyakTrackId = 1068;
-
         // HapYak Viewer
         hapyak.viewer({
-            assets: 'http://hapyak-staging-assets.s3.amazonaws.com/js',
-            api: 'http://staging.hapyak.com',
-            logLevel: 'info',
-            gzip: false,
-            debug: false,
+            environment: 'staging',
+            gzip: true,
             player: ytPlayer,
             playerType: "youtube",
             playerWidth: 640,
             playerHeight: 360,
-            trackId: hapyakTrackId,
+            trackId: 1068,
             autoplay: true
         });
 
