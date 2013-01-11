@@ -35,8 +35,8 @@ ytPlayer = new YT.Player('video', {
 hapyak.viewer({
     player: ytPlayer,
     playerType: "youtube",
-    playerWidth: 640,
-    playerHeight: 360,
+    width: 640,
+    height: 360,
     trackId: 640,
     autoplay: true
 });
@@ -53,12 +53,12 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5"
 
-**playerWidth (optional)**
+**width (optional)**
 
 Tells HapYak the width of the player object. Optional, but the viewer may not always be
 able to figure out the right sizing.
 
-**playerHeight (optional)**
+**height (optional)**
 
 Tells HapYak the height of the player object. Optional, but the viewer may not always be
 able to figure out the right sizing.
