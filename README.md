@@ -51,7 +51,7 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 **playerType**
 
-Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5"
+Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer"
 
 **width (optional)**
 
@@ -151,3 +151,4 @@ represent some subgroup of your end users.
 ## Demos
 
 * [YouTube viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html)
+* [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
