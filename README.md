@@ -110,7 +110,7 @@ The width of the IFRAME editor element to create.
 
 **videoType**
 
-The type of video to load. Valid values can be "youtube", "vimeo", "html5".
+The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer"
 
 **videoId**
 
