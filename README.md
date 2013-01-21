@@ -181,20 +181,11 @@ As long as the ﬁrewall can allow access to our HTTPS cloud service, yes.
 
 All styles can be controlled via CSS giving you absolute power over styling.
 
-**Is this just PopcornJS?**
-
-No, we rely on PopcornJS as a core technology but layer onto it a simpliﬁed toolset, commercial API’s, infrastructure and integrations which
-make it meaningful to businesses.
-
 **Does this work on mobile?**
 
 Annotations will work in any browser that allows HTML to be overlaid on video. iPads and other tablets are able to view and create
 annotations using our solution. Android phones are generally compliant with our system, however iPhones do not allow HTML to be overlaid
 on video.
-
-**What video players do HapYak annotations work with?**
-
-YouTube, Vimeo, SoundCloud, DailyMotion, VideoJS, JPlayer, JWPlayer, Wistia, Vidcaster, Brightcove, Native HTML5, more soon...
 
 ## Demos
 
