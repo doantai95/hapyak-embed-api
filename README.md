@@ -51,7 +51,7 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 **playerType**
 
-Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5"
+Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer"
 
 **width (optional)**
 
@@ -110,7 +110,7 @@ The width of the IFRAME editor element to create.
 
 **videoType**
 
-The type of video to load. Valid values can be "youtube", "vimeo", "html5".
+The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer"
 
 **videoId**
 
@@ -199,3 +199,4 @@ YouTube, Vimeo, SoundCloud, DailyMotion, VideoJS, JPlayer, JWPlayer, Wistia, Vid
 ## Demos
 
 * [YouTube viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html)
+* [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
