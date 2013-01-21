@@ -147,6 +147,54 @@ string identifier for one of your end users.
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
 
+## Definitions
+
+**video**
+
+A reference to the video to be annotated. It might reference a YouTube video, an html5 video,
+or a video behind a partners firewall. Tracks are attached to the video object. Any one video
+may have any number of tracks attached.
+
+**track**
+
+A HapYak track is the container that holds a set of video annotations. A track also
+may contain metadata about the annotation content such as language data,
+security restrictions, and basic statistics about the annotations.
+
+**annotation**
+
+An annotation is a single drawing, popup comment, image, etc, added to a video track.
+It has the annotation data, as well as video time synchronization information.
+
+
+## FAQ
+
+**Do you host and serve videos?**
+
+No, we integrate with your existing solutions or partner to provide a complete solution as needed.
+
+**Will this work behind a ﬁrewall?**
+
+As long as the ﬁrewall can allow access to our HTTPS cloud service, yes.
+
+**How can I customize the look and feel of the player and annotations?**
+
+All styles can be controlled via CSS giving you absolute power over styling.
+
+**Is this just PopcornJS?**
+
+No, we rely on PopcornJS as a core technology but layer onto it a simpliﬁed toolset, commercial API’s, infrastructure and integrations which
+make it meaningful to businesses.
+
+**Does this work on mobile?**
+
+Annotations will work in any browser that allows HTML to be overlaid on video. iPads and other tablets are able to view and create
+annotations using our solution. Android phones are generally compliant with our system, however iPhones do not allow HTML to be overlaid
+on video.
+
+**What video players do HapYak annotations work with?**
+
+YouTube, Vimeo, SoundCloud, DailyMotion, VideoJS, JPlayer, JWPlayer, Wistia, Vidcaster, Brightcove, Native HTML5, more soon...
 
 ## Demos
 
