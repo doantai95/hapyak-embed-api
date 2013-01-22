@@ -84,7 +84,7 @@ the page, under the element passed in with elementId.
 ### Example 
 
 ```javascript
-hapyak.editor({
+var editor = hapyak.editor({
     // rootUrl: 'http://dev.hapyak.com',
 	elementId: 'hapyak-editor-test',
 	width: 560,
@@ -97,6 +97,10 @@ hapyak.editor({
 		console.log('hapyak.editor.onSave reported to parent page [' + trackId + ']');
 	}
 });
+
+editor.save(function() {
+	console.log('saved');
+})
 ```
 ### Options
 
@@ -122,10 +126,6 @@ this parameter would be the YouTube video id.
 The URL of the video to load. If **videoType** is set to "html5", this would be
 the URL to the video.
 
-**save (optional)**
-
-Tells the editor to commit the changes the user has made.
-
 **onSave (optional)**
 
 When a save successfully finishes, this callback is called.
@@ -146,6 +146,18 @@ string identifier for one of your end users.
 
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
+
+### Hapyak Editor
+
+hapyak.editor will return a new editor object.
+
+**save**
+
+Tells the editor to commit the changes the user has made.
+
+**destroy**
+
+Tells the editor to shutdown and cleanup.
 
 ## Definitions
 
