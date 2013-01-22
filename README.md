@@ -147,13 +147,14 @@ string identifier for one of your end users.
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
 
-### Hapyak Editor
+### HapyakEditor
 
-hapyak.editor will return a new editor object.
+hapyak.editor({}) will return a new editor object.
 
-**save**
+**save(callback)**
 
-Tells the editor to commit the changes the user has made.
+Tells the editor to commit the changes the user has made. Takes an optional callback
+argument which will be passed the trackId that was saved.
 
 **destroy**
 
