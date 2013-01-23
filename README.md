@@ -108,6 +108,11 @@ editor.save(function() {
 
 The ID of the element to drop the HapYak editor iframe into.
 
+**element**
+
+The DOM element to drop the HapYak editor iframe into. This can be used instead
+of passing **elementId**.
+
 **width (optional)**
 
 The width of the IFRAME editor element to create.
