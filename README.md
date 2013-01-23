@@ -51,7 +51,7 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 **playerType**
 
-Tells HapYak what sort of **player** was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer"
+Tells HapYak what sort of _player_ was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer".
 
 **width (optional)**
 
@@ -72,8 +72,6 @@ for popup, drawing, audio, etc, commentary.
 
 If set to true, the video with commentary will start to play once the video is loaded, and the track
 has been downloaded from hapyak.com.
-
-
   
 
 ## Editor API
@@ -111,7 +109,7 @@ The ID of the element to drop the HapYak editor iframe into.
 **element**
 
 The DOM element to drop the HapYak editor iframe into. This can be used instead
-of passing **elementId**.
+of passing _elementId_.
 
 **width (optional)**
 
@@ -119,16 +117,16 @@ The width of the IFRAME editor element to create.
 
 **videoType**
 
-The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer"
+The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer".
 
 **videoId**
 
-The ID of the video to load. If **videoType** is set to "youtube" for example,
+The ID of the video to load. If _videoType_ is set to "youtube" for example,
 this parameter would be the YouTube video id.
 
 **videoUrl**
 
-The URL of the video to load. If **videoType** is set to "html5", this would be
+The URL of the video to load. If _videoType_ is set to "html5", this would be
 the URL to the video.
 
 **onSave (optional)**
@@ -138,7 +136,7 @@ When a save successfully finishes, this callback is called.
 **onNewTrack (optional)**
 
 If a new track is created by the editor, this callback will be passed the new trackId.
-This allows you to store this trackId and use it with **.viewer** API calls.
+This allows you to store this trackId and use it with _.viewer_ API calls.
 
 ### Advanced Options
 
