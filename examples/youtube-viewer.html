@@ -1,37 +1,37 @@
 <html>
-  <head>
+<head>
     <script src="http://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
 
     <script>
-      window.onYouTubeIframeAPIReady = function () {
-        var ytPlayer = new YT.Player('video', {
-          height: '390',
-          width: '640',
-          videoId: 'u1zgFlCw8Aw',
-          playerVars: {
-            html: 1,
-            wmode: 'opaque'
-          }
-        });
+        window.onYouTubeIframeAPIReady = function () {
+            var ytPlayer = new YT.Player('video', {
+                height: '390',
+                width: '640',
+                videoId: 'u1zgFlCw8Aw',
+                playerVars: {
+                    html: 1,
+                    wmode: 'opaque'
+                }
+            });
 
-        // HapYak Viewer
-        hapyak.viewer({
-            gzip: true,
-            player: ytPlayer,
-            playerType: "youtube",
-            width: 640,
-            height: 360,
-            trackId: 1068,
-            autoplay: true
-        });
+            // HapYak Viewer
+            hapyak.viewer({
+                gzip: true,
+                player: ytPlayer,
+                playerType: "youtube",
+                width: 640,
+                height: 360,
+                trackId: 1068,
+                autoplay: true
+            });
 
-      };
+        };
     </script>
-  </head>
-  <body>
-    <div id="container" style="position: relative">
-      <div id="video"></div>
-    </div>
-  </body>
+</head>
+<body>
+<div id="container" style="position: relative">
+    <div id="video"></div>
+</div>
+</body>
 </html>
