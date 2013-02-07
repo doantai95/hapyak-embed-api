@@ -35,6 +35,7 @@ ytPlayer = new YT.Player('video', {
 hapyak.viewer({
     player: ytPlayer,
     playerType: "youtube",
+    css: "http://modernizr.com/i/css/modernizr-2.1.1.css?v=1",
     width: 640,
     height: 360,
     trackId: 640,
@@ -63,6 +64,10 @@ able to figure out the right sizing.
 Tells HapYak the height of the player object. Optional, but the viewer may not always be
 able to figure out the right sizing.
 
+**css (optional)**
+
+The location of a CSS file to load.
+
 **trackId**
 
 The ID of the HapYak commentary track to load. A HapYak "track" is the container
@@ -86,6 +91,7 @@ var editor = hapyak.editor({
     // rootUrl: 'http://dev.hapyak.com',
 	elementId: 'hapyak-editor-test',
 	width: 560,
+	cssL 'http://modernizr.com/i/css/modernizr-2.1.1.css?v=1',
 	videoType: 'html5',
 	videoUrl: 'http://cloudfront.net/videos/video.mp4',
 	onNewTrack: function (trackId) {
@@ -114,6 +120,10 @@ of passing _elementId_.
 **width (optional)**
 
 The width of the IFRAME editor element to create.
+
+**css (optional)**
+
+The location of a CSS file to load.
 
 **videoType**
 
