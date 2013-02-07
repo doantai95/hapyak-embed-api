@@ -216,5 +216,6 @@ on video.
 ## Demos
 
 * [YouTube viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html)
+* [YouTube embed demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-embed.html)
 * [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
 * [Wistia viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/wistia-viewer.html)
