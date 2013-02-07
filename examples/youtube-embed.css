@@ -13,3 +13,20 @@ background-color: rgba(255, 255, 255, .9);
 padding:8px;
 font-family: 'Helvetica' !important;
 }
+
+.hapyak-controls .group {
+font-size: 14px;
+}
+
+.hapyak-controls {
+padding: 0px 12px 4px;
+}
+
+.hapyak-controls div.hapyak-group-standard:first-of-type {
+padding: 0px;
+}
+
+.hapyak-control-bar, .hapyak-more-icon > .hapyak-edit-more-icons {
+background-color: #979797;
+}
+
