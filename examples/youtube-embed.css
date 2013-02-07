@@ -5,9 +5,10 @@ line-height: 100%;
 box-sizing: border-box;
 -moz-box-shadow: 0 0 5px 1px #ccc;
 -webkit-box-shadow: 0 0 5px 1px #ccc;
-box-shadow: 0 0 5px 1px #ccc;
-border-color: transparent;
-border: 0px;
+box-shadow: none;
+border: 0px #0088cc solid;
 word-wrap: break-word;
 max-width: 450px;
+opacity: .5;
+background-color: rgba(255, 255, 255, 0.9);
 }
