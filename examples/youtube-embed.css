@@ -36,8 +36,10 @@ border-left: 0px;
 }
 
 .hapyak-edit-controls {
-  border-radius: 8px;
+border-radius: 8px;
 box-shadow: 0px 0px 10px #eee;
-padding: 4px;
+padding: 4px !important;
+background-color: rgb(41, 37, 44);
 }
+
 
