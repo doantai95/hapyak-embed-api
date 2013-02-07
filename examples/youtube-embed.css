@@ -9,7 +9,7 @@ box-shadow: none;
 border: 0px #0088cc solid;
 word-wrap: break-word;
 max-width: 450px;
-background-color: rgba(255, 255, 255, .8);
+background-color: rgba(255, 255, 255, .9);
 padding:8px;
-font-family: 'Helventica' !important;
+font-family: 'Helvetica' !important;
 }
