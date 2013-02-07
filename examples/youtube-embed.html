@@ -1,47 +1,9 @@
 <html>
   <head>
+      <script type="text/javascript" src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
   </head>
   <body>
     <div id='hapyak-editor'></div>
-    <script type="text/javascript">
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-        var regexS = "[\\?&]" + name + "=([^&#]*)";
-        var regex = new RegExp(regexS);
-        var results = regex.exec(window.parent.location.search);
-        if(results == null)
-          return null;
-        else
-          return decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-
-      var HapyakViewerConfig = {
-        apiKey: "",
-        trackId: 2101,
-        assets: 'http://hapyak-assets.s3.amazonaws.com/js',
-        api: 'http://hapyak.com',
-        logLevel: 'info',
-        debug: false
-      },
-      mode = getParameterByName('mode') || 'staging',
-      scr = '/hapyak.gz.js';
-
-      if (mode === 'dev') {
-        HapyakViewerConfig.assets = '/js';
-        HapyakViewerConfig.api = 'http://dev.hapyak.com';
-        HapyakViewerConfig.logLevel = 'debug';
-        HapyakViewerConfig.debug = true;
-        scr = '/hapyak.js';
-      } else if (mode === 'staging') {
-        HapyakViewerConfig.assets = 'http://hapyak-staging-assets.s3.amazonaws.com/js';
-        HapyakViewerConfig.api = 'http://staging.hapyak.com';
-      } else if (mode === 'feature') {
-        HapyakViewerConfig.assets = 'http://hapyak-feature-assets.s3.amazonaws.com/js';
-        HapyakViewerConfig.api = 'http://feature.hapyak.com';
-      }
-
-      document.write('<' + 'script src="' + HapyakViewerConfig.api + HapyakViewerConfig.assets + scr + '" type="text/javascript"><' + '/script>');
-    </script>
     <script>
       var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',

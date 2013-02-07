@@ -91,7 +91,7 @@ var editor = hapyak.editor({
     // rootUrl: 'http://dev.hapyak.com',
 	elementId: 'hapyak-editor-test',
 	width: 560,
-	cssL 'http://modernizr.com/i/css/modernizr-2.1.1.css?v=1',
+	css: 'http://modernizr.com/i/css/modernizr-2.1.1.css?v=1',
 	videoType: 'html5',
 	videoUrl: 'http://cloudfront.net/videos/video.mp4',
 	onNewTrack: function (trackId) {
