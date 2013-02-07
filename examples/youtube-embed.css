@@ -24,9 +24,20 @@ padding: 0px 12px 4px;
 
 .hapyak-controls div.hapyak-group-standard:first-of-type {
 padding: 0px;
+border-right: 0px;
 }
 
 .hapyak-control-bar, .hapyak-more-icon > .hapyak-edit-more-icons {
 background-color: #979797;
+}
+
+.hapyak-group-info {
+border-left: 0px;
+}
+
+.hapyak-edit-controls {
+  border-radius: 8px;
+box-shadow: 0px 0px 10px #eee;
+padding: 4px;
 }
 
