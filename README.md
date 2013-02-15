@@ -52,7 +52,7 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 **playerType**
 
-Tells HapYak what sort of _player_ was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer", "wistia"
+Tells HapYak what sort of _player_ was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer", "wistia", "dailymotion"
 
 **width (optional)**
 
@@ -127,7 +127,7 @@ The location of a CSS file to load.
 
 **videoType**
 
-The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer", "wistia"
+The type of video to load. Valid values can be "youtube", "vimeo", "html5", "jplayer", "wistia", "dailymotion"
 
 **videoId**
 
@@ -219,3 +219,4 @@ on video.
 * [YouTube embed demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-embed.html)
 * [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
 * [Wistia viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/wistia-viewer.html)
+* [Dailymotion viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-viewer.html)
