@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="http://fast.wistia.com/static/E-v1.js"></script>
+    <script src="http://staging.hapyak.com/js/hapyak.js"></script>
     <style>
       .container {
         display: inline-block;
@@ -16,48 +17,6 @@
       <span>Plugin API - HTML5</span>
       <div id="video2" style="width:500px; height: 281px; position: relative;"></div>
     </div>
-    <script type="text/javascript">
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-        var regexS = "[\\?&]" + name + "=([^&#]*)";
-        var regex = new RegExp(regexS);
-        var results = regex.exec(window.parent.location.search);
-        if(results == null)
-          return null;
-        else
-          return decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-
-      var HapyakViewerConfig = {
-        apiKey: "",
-        trackId: 2101,
-        assets: 'http://hapyak-assets.s3.amazonaws.com/js',
-        api: 'http://hapyak.com',
-        logLevel: 'info',
-        debug: false
-      },
-      mode = getParameterByName('mode') || 'staging',
-      trackid = getParameterByName('trackid') || 2101,
-      scr = '/hapyak.gz.js';
-
-      if (mode === 'dev') {
-        HapyakViewerConfig.assets = '/js';
-        HapyakViewerConfig.api = 'http://dev.hapyak.com';
-        HapyakViewerConfig.logLevel = 'debug';
-        HapyakViewerConfig.debug = true;
-        scr = '/hapyak.js';
-      } else if (mode === 'staging') {
-        HapyakViewerConfig.assets = 'http://hapyak-staging-assets.s3.amazonaws.com/js';
-        HapyakViewerConfig.api = 'http://staging.hapyak.com';
-      } else if (mode === 'feature') {
-        HapyakViewerConfig.assets = 'http://hapyak-feature-assets.s3.amazonaws.com/js';
-        HapyakViewerConfig.api = 'http://feature.hapyak.com';
-      }
-
-      HapyakViewerConfig.trackId = trackid;
-
-      document.write('<' + 'script src="' + HapyakViewerConfig.assets + scr + '" type="text/javascript"><' + '/script>');
-    </script>
     <script>
       (function() {
         var player = Wistia.embed( "8b5zb0lvxs", {
@@ -76,32 +35,26 @@
 
         player.ready(function() {
           hapyak.viewer({
-            assets: HapyakViewerConfig.assets,
-            api: HapyakViewerConfig.api,
-            logLevel: HapyakViewerConfig.logLevel,
-            debug: HapyakViewerConfig.debug,
-            apiKey: HapyakViewerConfig.apiKey,
+            gzip: true,
+            environment: 'staging',
             player: player,
             width: 560,
             height: 315,
             videoType: "wistia",
-            trackId: HapyakViewerConfig.trackId,
+            trackId: 2101,
             autoplay: false
           });
         });
 
         Wistia.plugin( "hapyak", function( video, options ) {
           hapyak.viewer({
-            assets: HapyakViewerConfig.assets,
-            api: HapyakViewerConfig.api,
-            logLevel: HapyakViewerConfig.logLevel,
-            debug: HapyakViewerConfig.debug,
-            apiKey: HapyakViewerConfig.apiKey,
+            gzip: true,
+            environment: 'staging',
             player: player2,
             width: 560,
             height: 315,
             videoType: "wistia",
-            trackId: HapyakViewerConfig.trackId,
+            trackId: 2101,
             autoplay: false
           });
         });
