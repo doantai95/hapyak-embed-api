@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="http://fast.wistia.com/static/E-v1.js"></script>
-    <script src="http://staging.hapyak.com/js/hapyak.js"></script>
+    <script type="text/javascript" src="http://assets.hapyak.com/js/hapyak.gz.js"></script>
     <style>
       .container {
         display: inline-block;
@@ -36,7 +36,6 @@
         player.ready(function() {
           hapyak.viewer({
             gzip: true,
-            environment: 'staging',
             player: player,
             width: 560,
             height: 315,
@@ -49,7 +48,6 @@
         Wistia.plugin( "hapyak", function( video, options ) {
           hapyak.viewer({
             gzip: true,
-            environment: 'staging',
             player: player2,
             width: 560,
             height: 315,
