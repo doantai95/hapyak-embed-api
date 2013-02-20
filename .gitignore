@@ -3,6 +3,11 @@
 # C extensions
 *.so
 
+#ignore vim temporary files
+*~
+*.swp
+*.swo
+
 # Packages
 *.egg
 *.egg-info
