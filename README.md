@@ -77,7 +77,15 @@ for popup, drawing, audio, etc, commentary.
 
 If set to true, the video with commentary will start to play once the video is loaded, and the track
 has been downloaded from hapyak.com.
-  
+
+**minWidth (optional)**
+
+Minimum width of player in pixels to show annotations. If the player width is below this value, all annotatinos will be hidden.  Optional, defaults to 300px.
+
+**minHeight (optional)**
+
+Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
+
 
 ## Editor API
 
@@ -159,6 +167,14 @@ string identifier for one of your end users.
 
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
+
+**minWidth (optional)**
+
+Minimum width of player in pixels to show annotations. If the player width is below this value, all annotatinos will be hidden.  Optional, defaults to 300px.
+
+**minHeight (optional)**
+
+Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
 
 ### HapyakEditor
 
