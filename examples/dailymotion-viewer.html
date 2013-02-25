@@ -16,7 +16,7 @@
     <script>
       (function() {
         var player = DM.player("player", {
-                "video": "xhl0be",
+                "video": "xvttqn",
                 "width": 560,
                 "height": 315,
                 "params": {
@@ -29,7 +29,7 @@
             gzip: true,
             player: player,
             videoType: "dailymotion",
-            trackId: 648,
+            trackId: DemoUtils.getParameterByName('trackid') || 1627,
             autoplay: false
           });
       })();
