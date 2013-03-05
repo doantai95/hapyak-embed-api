@@ -12,51 +12,14 @@
     <div class="container">
       <span>Player API - FLASH</span>
       <div id="video" style="width:500px; height: 281px; position: relative;"></div>
+      <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/wistia-viewer.js?footer=0"></script>
     </div>
     <div class="container">
       <span>Plugin API - HTML5</span>
       <div id="video2" style="width:500px; height: 281px; position: relative;"></div>
+      <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/wistia-viewer2.js?footer=0"></script>
     </div>
-    <script>
-      (function() {
-        var player = Wistia.embed( "8b5zb0lvxs", {
-          "platformPreference": "flash",
-          "container": "video"
-        }),
-        player2 = Wistia.embed( "8b5zb0lvxs", {
-          "platformPreference": "html5",
-          "container": "video2",
-          "plugin": {
-            "hapyak": {
-              "src": "http://cdn-assets.hapyak.com/js/hapyak.gz.js"
-            }
-          }
-        });
-
-        player.ready(function() {
-          hapyak.viewer({
-            gzip: true,
-            player: player,
-            width: 560,
-            height: 315,
-            videoType: "wistia",
-            trackId: 2101,
-            autoplay: false
-          });
-        });
-
-        Wistia.plugin( "hapyak", function( video, options ) {
-          hapyak.viewer({
-            gzip: true,
-            player: player2,
-            width: 560,
-            height: 315,
-            videoType: "wistia",
-            trackId: 2101,
-            autoplay: false
-          });
-        });
-      })();
-    </script>
+    <script src="js/wistia-viewer.js"></script>
+    <script src="js/wistia-viewer2.js"></script>
   </body>
 </html>
