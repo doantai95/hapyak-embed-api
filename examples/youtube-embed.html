@@ -1,32 +1,17 @@
 <html>
   <head>
       <script type="text/javascript" src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+      <style>
+          .container {
+              width: 560px;
+          }
+      </style>
   </head>
   <body>
     <div id='hapyak-editor'></div>
-    <script>
-      var hapyakEditor = hapyak.editor({
-        elementId: 'hapyak-editor',
-        width: 560,
-        videoId: 356566,
-        trackId: 1068,
-        css: 'http://hapyak.github.com/hapyak-embed-api/examples/youtube-embed.css',
-        onLoadTrack: function (p) {
-          console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
-        },
-        onLoadCurrentUser: function (p) {
-          console.log('hapyak.editor.onLoadCurrentUser reported to parent page [' + p.userId + ', ' + p.username + ']');
-        },
-        onNewTrack: function (trackId) {
-          console.log('hapyak.editor.onNewTrack reported to parent page [' + trackId + ']');
-        },
-        onSave: function (trackId) {
-          console.log('hapyak.editor.onSave reported to parent page [' + trackId + ']');
-        },
-        onLoad: function () {
-          console.log('hapyak.editor.onLoad reported to parent page');
-        }
-      });
-    </script>
+    <div class="container">
+        <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/youtube-embed.js?footer=0"></script>
+    </div>
+    <script src="js/youtube-embed.js"></script>
   </body>
 </html>

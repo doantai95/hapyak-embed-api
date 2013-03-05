@@ -5,34 +5,14 @@
     <style>
       .container {
         position: relative;
-        display: inline-block;
       }
     </style>
   </head>
   <body>
     <div class="container">
         <div id="player"></div>
+        <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/dailymotion-viewer.js?footer=0"></script>
     </div>
-    <script>
-      (function() {
-        var player = DM.player("player", {
-                "video": "xvttqn",
-                "width": 560,
-                "height": 315,
-                "params": {
-                    "info": 0,
-                    "related": 0
-                }
-            });
-
-          hapyak.viewer({
-            gzip: true,
-            player: player,
-            videoType: "dailymotion",
-            trackId: DemoUtils.getParameterByName('trackid') || 1627,
-            autoplay: false
-          });
-      })();
-    </script>
+    <script src="js/dailymotion-viewer.js"></script>
   </body>
 </html>
