@@ -54,29 +54,8 @@
         </div>
         <div id="1357745795395" style="position: absolute; color: white; text-shadow: black 2px 2px 6px; font-weight: bold; text-align: center; font-size: 18px; width: 640px; top: 841px; left: 148px;"><div id="subtitle-0" style="display: none;"></div><div id="subtitle-1" style="display: none;"></div><div id="subtitle-2" style="display: none;"></div><div id="subtitle-3" style="display: none;"></div></div></div>
     </div>
-    <script>
-      (function() {
-        var player,
-            popcorn;
-
-          $( "#jquery_jplayer_1" ).jPlayer({
-            "ready": function() {
-              $( this ).jPlayer( "setMedia", {
-                "webmv": "http://video.webmfiles.org/elephants-dream.webm"
-              });
-              hapyak.viewer({
-                gzip: true,
-                player: $( this ),
-                videoType: "jplayer",
-                width: 560,
-                height: 315,
-                trackId: 1068,
-                autoplay: false
-              });
-            },
-            "solution": "html, flash",
-            "supplied": "webmv"
-          });
-      })();
-    </script>
+    <div style="width: 560px;">
+            <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/jplayer-viewer.js?footer=0"></script>
+    </div>
+    <script src="js/jplayer-viewer.js"></script>
   </body>
