@@ -1,0 +1,46 @@
+<style>
+  /* until the fix gets deployed */
+  .hapyak-player {
+    position: relative;
+  }
+  
+  .hapyak-player .hapyak-annotation-container .popcorn-contents {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 7px 0;
+  }
+  
+</style>
+<script src="http://www.youtube.com/iframe_api"></script>
+<script type="text/javascript" src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+
+<script>
+//change videoId: 'iCyGUV1GauE' to match the YouTube video id
+
+window.onYouTubeIframeAPIReady = function () {
+    var ytPlayer = new YT.Player('video', {
+        height: '390',
+        width: '640',
+        videoId: 'iCyGUV1GauE',
+        playerVars: {
+            html: 1,
+        wmode: 'opaque'
+        }
+    });
+
+    // HapYak Viewer
+    //change trackId: 'iCyGUV1GauE' to match the HapYak track id
+    hapyak.viewer({
+        gzip: true,
+        player: ytPlayer,
+        playerType: "youtube",
+        width: 640,
+        height: 360,
+        trackId: 2676,
+        autoplay: true
+    });
+};
+</script>
+<div class="container">
+<div id="video"></div>
+</div>
