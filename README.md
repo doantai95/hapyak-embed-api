@@ -185,6 +185,16 @@ hapyak.editor({}) will return a new editor object.
 Tells the editor to commit the changes the user has made. Takes an optional callback
 argument which will be passed the trackId that was saved.
 
+**newTrack(callback)** (premium feature)
+
+Creates a new track for the current video. Takes an optional callback
+argument which will be passed the trackId that was saved.
+
+**copyTrack(callback)** (premium feature)
+
+Copies the current track. Takes an optional callback
+argument which will be passed the trackId that was saved.
+
 **destroy**
 
 Tells the editor to shutdown and cleanup.
