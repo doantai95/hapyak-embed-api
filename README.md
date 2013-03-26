@@ -188,7 +188,7 @@ hapyak.viewer({
 });
 ```
 
-There is a built in MixPanel tracking event function.
+There is a built in MixPanel tracking event function that will push the tracking events into your MixPanel instance.
 
 ```javascript
 hapyak.viewer({
