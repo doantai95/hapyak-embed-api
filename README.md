@@ -176,7 +176,7 @@ Minimum width of player in pixels to show annotations. If the player width is be
 
 Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
 
-**onTrackingEvent**
+**onTrackingEvent (optional)**
 
 Used to intercept playback statistics. Can be used, for example, to track playback statistics in MixPanel.
 
