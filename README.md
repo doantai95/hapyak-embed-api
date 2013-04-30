@@ -86,6 +86,18 @@ Minimum width of player in pixels to show annotations. If the player width is be
 
 Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
 
+### Advanced Options
+
+**userId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a userId. The userId should be some
+string identifier for one of your end users.
+
+**groupId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a groupId. The groupId should
+represent some subgroup of your end users.
+
 
 ## Editor API
 
