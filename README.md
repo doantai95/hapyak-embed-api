@@ -280,3 +280,5 @@ on video.
 * [Dailymotion viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-viewer.html)
 * [VideoJS viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-viewer.html)
 * [VideoJS embed demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-embed.html)
+* [Brightcove embed demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-embed.html)
+* [Brightcove viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-viewer.html)
