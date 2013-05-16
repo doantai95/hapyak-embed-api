@@ -15,7 +15,7 @@ window.BCL = (function() {
                 gzip: true,
                 environment: 'feature',
                 player: player,
-                videoType: 'brightcove',
+                playerType: 'brightcove',
                 trackId: DemoUtils.getParameterByName('trackid') || 2652,
                 autoplay: false
             });
