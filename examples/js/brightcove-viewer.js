@@ -16,7 +16,7 @@ window.BCL = (function() {
                 environment: 'feature',
                 player: player,
                 playerType: 'brightcove',
-                trackId: DemoUtils.getParameterByName('trackid') || 2652,
+                trackId: 2652,
                 autoplay: false
             });
         }
