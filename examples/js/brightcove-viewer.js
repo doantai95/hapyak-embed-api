@@ -1,12 +1,14 @@
 window.BCL = (function() {
     var brightcovePlayer,
         player,
-        APIModules;
+        APIModules,
+        experience,
+        videoModule;
 
     return {
         onTemplateLoad: function(experienceID) {
-            brightcovePlayer = brightcove.api.getExperience( experienceID );
             APIModules = brightcove.api.modules.APIModules;
+            brightcovePlayer = brightcove.api.getExperience( experienceID );
         },
         onTemplateReady: function() {
             player = brightcovePlayer.getModule( APIModules.VIDEO_PLAYER );
