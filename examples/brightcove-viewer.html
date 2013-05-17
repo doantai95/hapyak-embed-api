@@ -1,5 +1,8 @@
 <html>
   <head>
+    <script src="js/brightcove-viewer.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
     <script type="text/javascript" src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
     <style>
       .container {
@@ -15,10 +18,7 @@
   <body>
     <div class="container">
         <div id="player">
-            <script src="js/brightcove-viewer.js"></script>
-            <script language="JavaScript" type="text/javascript" src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
-            <script language="JavaScript" type="text/javascript" src="https://sadmin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
-            <object id="myExperience921449663001" class="BrightcoveExperience">
+            <object id="a" class="BrightcoveExperience">
                 <param name="bgcolor" value="#FFFFFF" />
                 <param name="width" value="100%" />
                 <param name="height" value="100%" />
@@ -26,9 +26,8 @@
                 <param name="isVid" value="true" />
                 <param name="isUI" value="true" />
                 <param name="dynamicStreaming" value="true" />
-                <param name="@videoPlayer" value="1595052160001" />
                 <param name="includeAPI" value="true" />
-                <param name="secureConnections" value="true" />
+                <param name="@videoPlayer" value="1595052160001" />
                 <param name="templateLoadHandler" value="BCL.onTemplateLoad" />
                 <param name="templateReadyHandler" value="BCL.onTemplateReady" />
             </object>
