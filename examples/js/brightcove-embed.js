@@ -2,7 +2,6 @@
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
         environment: 'feature',
-        apiKey: 1234,
         width: 560,
         videoId: 607560,
         trackId: 2652,
