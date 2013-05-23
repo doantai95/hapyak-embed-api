@@ -2,8 +2,7 @@
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
         apiKey: '0ea6010d29d04ddea02cc5aba95b6c36',
-        userId: 'group',
-        groupId: 'group',
+        userId: 'guest',
         environment: 'feature',
         width: 560,
         videoId: 607560,
