@@ -15,10 +15,10 @@ window.BCL = (function() {
 
             hapyak.viewer({
                 gzip: true,
-                environment: 'feature',
+                environment: 'staging',
                 player: player,
                 playerType: 'brightcove',
-                trackId: 2652,
+                trackId: 3253,
                 autoplay: false
             });
         }
