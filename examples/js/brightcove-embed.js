@@ -1,10 +1,10 @@
 (function() {
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
-        environment: 'feature',
+        environment: 'staging',
         width: 560,
-        videoId: 607560,
-        trackId: 2652,
+        videoId: 646557,
+        trackId: 3253,
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
         },
