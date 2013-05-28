@@ -3,6 +3,7 @@
         elementId: 'hapyak-editor',
         environment: 'staging',
         width: 560,
+        height: 295,
         videoId: 526426,
         trackId: 1627,
         onLoadTrack: function (p) {
