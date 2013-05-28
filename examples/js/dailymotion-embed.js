@@ -2,6 +2,7 @@
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
         environment: 'staging',
+        width: 560,
         videoId: 526426,
         trackId: 1627,
         onLoadTrack: function (p) {
