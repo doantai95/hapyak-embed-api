@@ -52,7 +52,7 @@ Reference to the player DOM node, Javascript object, Flash file.
 
 **playerType**
 
-Tells HapYak what sort of _player_ was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer", "wistia", "dailymotion"
+Tells HapYak what sort of _player_ was passed in. Valid values are "videojs", "youtube", "vimeo", "html5", "jplayer", "wistia", "dailymotion", "brightcove"
 
 **width (optional)**
 
