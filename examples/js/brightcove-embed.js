@@ -5,6 +5,7 @@
         width: 560,
         videoType: 'brightcove',
         videoId: '2379199626001',
+        trackId: 3253,
         videoParameters: {
             bcpid: '2338078137001'
         },
