@@ -18,7 +18,7 @@ window.BCL = (function() {
                 environment: 'staging',
                 player: player,
                 playerType: 'brightcove',
-                trackId: 3253,
+                trackId: 3256,
                 autoplay: false
             });
         }
