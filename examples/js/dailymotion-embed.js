@@ -3,12 +3,9 @@
         elementId: 'hapyak-editor',
         environment: 'staging',
         width: 560,
-        videoType: 'brightcove',
-        videoId: '2379199626001',
-        trackId: 3256,
-        videoParameters: {
-            bcpid: '2338078137001'
-        },
+        height: 295,
+        videoId: 'xvttqn',
+        trackId: 1627,
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
         },

@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="js/brightcove-viewer.js"></script>
+    <script src="js/brightcove-viewer.js?v=1"></script>
     <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
     <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-    <script type="text/javascript" src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+    <script type="text/javascript" src="http://hapyak-staging-assets.s3.amazonaws.com/js/hapyak.gz.js"></script>
     <style>
-      .container {
+      #player {
         position: relative;
         width: 560px;
         height: 315px;
@@ -28,6 +29,7 @@
                 <param name="dynamicStreaming" value="true" />
                 <param name="includeAPI" value="true" />
                 <param name="@videoPlayer" value="2379199626001" />
+                <param name="wmode" value="transparent" />
                 <param name="templateLoadHandler" value="BCL.onTemplateLoad" />
                 <param name="templateReadyHandler" value="BCL.onTemplateReady" />
             </object>
