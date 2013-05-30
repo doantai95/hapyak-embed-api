@@ -163,6 +163,10 @@ this parameter would be the YouTube video id.
 The URL of the video to load. If _videoType_ is set to "html5", this would be
 the URL to the video.
 
+**videoParameters**
+
+Additional parameters passed through to the specific player based on videoType.
+
 **onSave (optional)**
 
 When a save successfully finishes, this callback is called.
