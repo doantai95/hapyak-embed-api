@@ -286,6 +286,7 @@ on video.
 * [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
 * [Wistia viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/wistia-viewer.html)
 * [Dailymotion viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-viewer.html)
+* [Dailymotion embed demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-embed.html)
 * [VideoJS viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-viewer.html)
 * [VideoJS embed demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-embed.html)
 * [Brightcove embed demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-embed.html)
