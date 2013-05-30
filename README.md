@@ -102,6 +102,11 @@ represent some subgroup of your end users.
 
 Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
 
+```javascript
+hapyak.viewer({
+    environment: 'production'
+});
+```
 
 ## Editor API
 
@@ -167,6 +172,17 @@ the URL to the video.
 
 Additional parameters passed through to the specific player based on videoType.
 
+```javascript
+hapyak.editor({
+    videoType: 'brightcove',
+    videoId: 'bctitleid'
+    videoParameters: {
+        bcpid: 'bcpid',
+        bckey: 'bckey'
+    }
+});
+```
+
 **onSave (optional)**
 
 When a save successfully finishes, this callback is called.
@@ -219,6 +235,12 @@ hapyak.viewer({
 **environment (optional, for debugging)**
 
 Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
+
+```javascript
+hapyak.editor({
+    environment: 'production'
+});
+```
 
 ### HapyakEditor
 
