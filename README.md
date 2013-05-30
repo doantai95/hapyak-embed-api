@@ -77,7 +77,31 @@ for popup, drawing, audio, etc, commentary.
 
 If set to true, the video with commentary will start to play once the video is loaded, and the track
 has been downloaded from hapyak.com.
-  
+
+**minWidth (optional)**
+
+Minimum width of player in pixels to show annotations. If the player width is below this value, all annotatinos will be hidden.  Optional, defaults to 300px.
+
+**minHeight (optional)**
+
+Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
+
+### Advanced Options
+
+**userId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a userId. The userId should be some
+string identifier for one of your end users.
+
+**groupId (optional, requires api key)**
+
+When using an api key, you can optionally pass in a groupId. The groupId should
+represent some subgroup of your end users.
+
+**environment (optional, for debugging)**
+
+Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
+
 
 ## Editor API
 
@@ -160,6 +184,38 @@ string identifier for one of your end users.
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
 
+**minWidth (optional)**
+
+Minimum width of player in pixels to show annotations. If the player width is below this value, all annotatinos will be hidden.  Optional, defaults to 300px.
+
+**minHeight (optional)**
+
+Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
+
+**onTrackingEvent (optional)**
+
+Used to intercept playback statistics. Can be used, for example, to track playback statistics in MixPanel.
+
+```javascript
+hapyak.viewer({
+    onTrackingEvent: function(data) {
+        console.log('HapYak / ' + data.event, data.properties);
+    }
+});
+```
+
+There is a built in MixPanel tracking event function that will push the tracking events into your MixPanel instance.
+
+```javascript
+hapyak.viewer({
+    onTrackingEvent: hapyak.mixpanelTrackingEventListener({mixpanel: window.mixpanel})
+});
+```
+
+**environment (optional, for debugging)**
+
+Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
+
 ### HapyakEditor
 
 hapyak.editor({}) will return a new editor object.
@@ -167,6 +223,16 @@ hapyak.editor({}) will return a new editor object.
 **save(callback)**
 
 Tells the editor to commit the changes the user has made. Takes an optional callback
+argument which will be passed the trackId that was saved.
+
+**newTrack(callback)** (premium feature)
+
+Creates a new track for the current video. Takes an optional callback
+argument which will be passed the trackId that was saved.
+
+**copyTrack(callback)** (premium feature)
+
+Copies the current track. Takes an optional callback
 argument which will be passed the trackId that was saved.
 
 **destroy**
@@ -220,7 +286,6 @@ on video.
 * [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
 * [Wistia viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/wistia-viewer.html)
 * [Dailymotion viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-viewer.html)
-* [Dailymotion embed demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-embed.html)
 * [VideoJS viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-viewer.html)
 * [VideoJS embed demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-embed.html)
 * [Brightcove embed demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-embed.html)
