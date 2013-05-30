@@ -98,6 +98,10 @@ string identifier for one of your end users.
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
 
+**environment (optional, for debugging)**
+
+Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
+
 
 ## Editor API
 
@@ -207,6 +211,10 @@ hapyak.viewer({
     onTrackingEvent: hapyak.mixpanelTrackingEventListener({mixpanel: window.mixpanel})
 });
 ```
+
+**environment (optional, for debugging)**
+
+Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
 
 ### HapyakEditor
 
