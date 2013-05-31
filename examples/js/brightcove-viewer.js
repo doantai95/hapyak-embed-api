@@ -17,7 +17,7 @@ window.BCL = (function() {
                 gzip: true,
                 player: player,
                 playerType: 'brightcove',
-                trackId: 3256,
+                trackId: 3514,
                 autoplay: false
             });
         }
