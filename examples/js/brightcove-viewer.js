@@ -15,7 +15,6 @@ window.BCL = (function() {
 
             hapyak.viewer({
                 gzip: true,
-                environment: 'staging',
                 player: player,
                 playerType: 'brightcove',
                 trackId: 3256,
