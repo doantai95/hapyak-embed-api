@@ -1,8 +1,8 @@
 (function() {
     var player = DM.player("player", {
         "video": "xvttqn",
-        "width": 560,
-        "height": 315,
+        "width": 660,
+        "height": 415,
         "params": {
             "info": 0,
         "related": 0
