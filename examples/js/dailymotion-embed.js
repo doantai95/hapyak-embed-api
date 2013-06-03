@@ -1,7 +1,6 @@
 (function() {
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
-        environment: 'staging',
         width: 660,
         height: 395,
         videoId: 'xvttqn',
