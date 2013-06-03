@@ -2,8 +2,8 @@
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
         environment: 'staging',
-        width: 560,
-        height: 295,
+        width: 660,
+        height: 395,
         videoId: 'xvttqn',
         trackId: 1627,
         onLoadTrack: function (p) {
