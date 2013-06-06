@@ -1,11 +1,10 @@
 (function() {
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
-        environment: 'staging',
         width: 560,
         videoType: 'brightcove',
         videoId: '2379199626001',
-        trackId: 3256,
+        trackId: 3514,
         videoParameters: {
             bcpid: '2338078137001'
         },
