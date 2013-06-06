@@ -18,6 +18,8 @@ window.BCL = (function() {
                 player: player,
                 playerType: 'brightcove',
                 trackId: 3514,
+                width: 560,
+                height: 315,
                 autoplay: false
             });
         }
