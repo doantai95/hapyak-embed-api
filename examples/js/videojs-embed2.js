@@ -4,9 +4,9 @@
         environment: 'feature',
         width: 560,
         videoType: 'html5',
-        videoUrl: 'http://aan.posterview.com/Help/files/iPostersVideoHD.mp4',
+        videoUrl: 'http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg',
         playerType: 'videojs',
-        trackId: 2700,
+        trackId: 2701,
         playerParameters: {
             version: 4
         },
