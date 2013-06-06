@@ -3,7 +3,9 @@
         elementId: 'hapyak-editor',
         environment: 'feature',
         width: 560,
-        videoId: 607159,
+        videoType: 'html5',
+        videoUrl: 'http://aan.posterview.com/Help/files/iPostersVideoHD.mp4',
+        playerType: 'videojs',
         trackId: 2700,
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
