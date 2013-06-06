@@ -5,6 +5,9 @@
         width: 560,
         videoId: 607159,
         trackId: 2700,
+        videoParameters: {
+            version: 4
+        },
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
         },
