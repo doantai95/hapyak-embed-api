@@ -10,14 +10,15 @@
             width: 100%;
         }
         .container {
-            width: 60%;
+            width: 640px;
+            height: 360px;
         }
         /*
         Apparently this is the reccomended method of setting videojs to be 100% of its container
         http://help.videojs.com/discussions/questions/249-how-to-set-video-height-and-width-to-fill-available-space
         */
         .gist-container {
-            width: 60%;
+            width: 640px;
             height: 100%;
             float: left;
         }
@@ -37,13 +38,5 @@
             <script src="http://gist-it.appspot.com/github/hapyak/hapyak-embed-api/blob/gh-pages/examples/js/videojs-viewer2.js?footer=0"></script>
         </div>
     <script src="js/videojs-viewer2.js"></script>
-    <script>
-        // Make sure we scale the container element and keep the aspect ratio
-        var elem = document.getElementById( "container" );
-        window.addEventListener( "resize", function() {
-            elem.style.height = ( elem.offsetWidth * 0.5625 ) + "px";
-        }, false);
-        elem.style.height = ( elem.offsetWidth * 0.5625) + "px";
-    </script>
   </body>
 </html>
