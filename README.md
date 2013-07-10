@@ -137,6 +137,7 @@ editor.save(function() {
 	console.log('saved');
 })
 ```
+
 ### Options
 
 **elementId**
@@ -184,6 +185,11 @@ hapyak.editor({
     }
 });
 ```
+
+**trackId**
+
+The ID of the HapYak commentary track to edit. A HapYak "track" is the container
+for popup, drawing, audio, etc, commentary.
 
 **onSave (optional)**
 
