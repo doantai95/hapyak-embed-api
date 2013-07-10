@@ -119,7 +119,6 @@ the page, under the element passed in with elementId.
 
 ```javascript
 var editor = hapyak.editor({
-    // rootUrl: 'http://dev.hapyak.com',
     apiKey: writeKey,
 	elementId: 'hapyak-editor-test',
 	width: 560,
