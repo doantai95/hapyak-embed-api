@@ -10,7 +10,8 @@ Include the following javascript reference in your project.
 
 **apiKey**
 
-If you have a HapYak API key, pass it in to each API call with this parameter.
+If you have a HapYak API key, pass it in to each API call with this parameter. HapYak typically issues
+a read API key, and a write API key. The read key should be passed to .viewer, and the write key to .editor.
 
 
 ## Viewer API
@@ -33,6 +34,7 @@ ytPlayer = new YT.Player('video', {
 });
 
 hapyak.viewer({
+    apiKey: readKey,
     player: ytPlayer,
     playerType: "youtube",
     css: "http://modernizr.com/i/css/modernizr-2.1.1.css?v=1",
@@ -89,6 +91,7 @@ the page, under the element passed in with elementId.
 ```javascript
 var editor = hapyak.editor({
     // rootUrl: 'http://dev.hapyak.com',
+    apiKey: writeKey,
 	elementId: 'hapyak-editor-test',
 	width: 560,
 	css: 'http://modernizr.com/i/css/modernizr-2.1.1.css?v=1',
