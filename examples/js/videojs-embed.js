@@ -1,10 +1,12 @@
 (function() {
     var hapyakEditor = hapyak.editor({
         elementId: 'hapyak-editor',
-        environment: 'staging',
-        width: 560,
-        videoId: 607159,
-        trackId: 2367,
+        environment: 'feature',
+        width: 640,
+        videoType: 'html5',
+        videoUrl: 'http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg',
+        playerType: 'videojs',
+        trackId: 2701,
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
         },

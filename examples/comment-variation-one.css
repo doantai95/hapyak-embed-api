@@ -1,0 +1,10 @@
+.hapyak-annotation-container > .popcorn-pop {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    background: rgba(255,255,255,0.8);
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    line-height: 1.25em;
+    padding: 0.5em 1em;
+}

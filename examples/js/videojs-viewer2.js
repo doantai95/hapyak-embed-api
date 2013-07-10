@@ -1,5 +1,5 @@
 (function() {
-    var vjs = VideoJS('video');
+    var vjs = videojs('video');
     vjs.ready(function() {
         hapyak.viewer({
             gzip: true,
