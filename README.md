@@ -186,7 +186,7 @@ hapyak.editor({
 });
 ```
 
-**trackId**
+**trackId (optional)**
 
 The ID of the HapYak commentary track to edit. A HapYak "track" is the container
 for popup, drawing, audio, etc, commentary. If you do not pass in a track id, a new
