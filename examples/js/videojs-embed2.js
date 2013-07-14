@@ -7,6 +7,9 @@
         videoUrl: 'http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg',
         playerType: 'videojs',
         trackId: 2701,
+        playerParameters: {
+            version: 4
+        },
         onLoadTrack: function (p) {
             console.log('hapyak.editor.onLoadTrack reported to parent page [' + p.videoId + ', ' + p.trackId + ']');
         },
