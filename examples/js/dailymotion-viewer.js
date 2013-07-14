@@ -1,6 +1,6 @@
 (function() {
     var elem = document.createElement("video"),
-        htmlMode = !!(elem.canPlayType && elem.canPlayType("video/mp4"),
+        htmlMode = !!(elem.canPlayType && elem.canPlayType("video/mp4")),
         player;
 
     player = DM.player("player", {
