@@ -88,6 +88,14 @@ Minimum width of player in pixels to show annotations. If the player width is be
 
 Minimum height of player in pixels to show annotations. If the player height is below this value, all annotatinos will be hidden.  Optional, defaults to 200px.
 
+**onLoad (optional)**
+
+A function to be called when the viewer has loaded. Will be passed one argument, a `HapyakViewer` object (see below).
+
+**onLoadAnnotations (options)**
+
+A function to be called when all annotations have been loaded.
+
 ### Advanced Options
 
 **userId (optional, requires api key)**
@@ -109,6 +117,46 @@ hapyak.viewer({
     environment: 'production'
 });
 ```
+
+### HapyakViewer
+
+A HapyakViewer object will be passed to the `onLoad` callback and supports the following methods and properties.
+
+#### Methods ####
+
+**getTrackId()**
+
+Returns the id (an integer) of the currently loaded track.
+
+**resize(width, height)**
+
+Resizes the player to the desired `height` and `width`.
+
+**play()**
+
+Plays the video.
+
+**pause()**
+
+Pauses the video.
+
+**destroy()**
+
+Tells the editor to shutdown and cleanup.
+
+#### Properties ####
+
+**duration**
+
+The duration in seconds of the video. This value will be `NaN` until the `onlaodedmetadata` event has fired. This property is read-only.
+
+**currentTime**
+
+The current time in the video of the play head, in seconds. This property can be set to cause the video to seek. If `currentTime` is set to a negative number or is greater than the `duration`, seeking will not happen.
+
+**paused**
+
+A boolean value indicating the play/pause state of the video. A video may not be playing even though `paused` is false if the video is stalled while loading from the network. This property is read-only.
 
 ## Editor API
 
@@ -256,6 +304,8 @@ hapyak.editor({
 
 hapyak.editor({}) will return a new editor object.
 
+#### Methods ####
+
 **save(callback)**
 
 Tells the editor to commit the changes the user has made. Takes an optional callback
@@ -271,9 +321,41 @@ argument which will be passed the trackId that was saved.
 Copies the current track. Takes an optional callback
 argument which will be passed the trackId that was saved.
 
-**destroy**
+**editTrack(data, callback)** (premium feature)
+
+Can be used to change the title or description of the current track. The `data` argument
+is an object with properties `title` and `description`. Also takes an optional callback
+argument which will be passed the trackId of the track that was modified.
+
+**resize(width, height)**
+
+Resizes the player to the desired `height` and `width`.
+
+**play()**
+
+Plays the video.
+
+**pause()**
+
+Pauses the video.
+
+**destroy()**
 
 Tells the editor to shutdown and cleanup.
+
+#### Properties ####
+
+**duration**
+
+The duration in seconds of the video. This value will be `NaN` until the `onlaodedmetadata` event has fired. This property is read-only.
+
+**currentTime**
+
+The current time in the video of the play head, in seconds. This property can be set to cause the video to seek. If `currentTime` is set to a negative number or is greater than the `duration`, seeking will not happen.
+
+**paused**
+
+A boolean value indicating the play/pause state of the video. A video may not be playing even though `paused` is false if the video is stalled while loading from the network. This property is read-only.
 
 ## Definitions
 
