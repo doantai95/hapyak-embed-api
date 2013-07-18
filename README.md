@@ -92,9 +92,13 @@ Minimum height of player in pixels to show annotations. If the player height is 
 
 A function to be called when the viewer has loaded. Will be passed one argument, a `HapyakViewer` object (see below).
 
-**onLoadAnnotations (options)**
+**onLoadAnnotations (optional)**
 
 A function to be called when all annotations have been loaded.
+
+**resetVariables (optional)**
+
+If set to true, all track variables set by quizzes, clicks or iframe scripts will be cleared before loading.
 
 ### Advanced Options
 
@@ -139,6 +143,10 @@ Plays the video.
 **pause()**
 
 Pauses the video.
+
+**resetVariables()**
+
+Reset all track variables set by quizzes, clicks or iframe scripts.
 
 **destroy()**
 
@@ -250,6 +258,10 @@ When a save successfully finishes, this callback is called.
 If a new track is created by the editor, this callback will be passed the new trackId.
 This allows you to store this trackId and use it with _.viewer_ API calls.
 
+**resetVariables (optional)**
+
+If set to true, all track variables set by quizzes, clicks or iframe scripts will be cleared before loading.
+
 ### Advanced Options
 
 **userId (optional, requires api key)**
@@ -338,6 +350,10 @@ Plays the video.
 **pause()**
 
 Pauses the video.
+
+**resetVariables()**
+
+Reset all track variables set by quizzes, clicks or iframe scripts.
 
 **destroy()**
 
