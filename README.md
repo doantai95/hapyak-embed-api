@@ -421,15 +421,21 @@ Annotations will work in any browser that allows HTML to be overlaid on video. i
 annotations using our solution. Android phones are generally compliant with our system, however iPhones do not allow HTML to be overlaid
 on video.
 
-## Demos
+## Examples
 
-* [YouTube viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-viewer.html)
-* [YouTube embed demo](http://hapyak.github.com/hapyak-embed-api/examples/youtube-embed.html)
-* [jPlayer viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/jplayer-viewer.html)
-* [Wistia viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/wistia-viewer.html)
-* [Dailymotion viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-viewer.html)
-* [Dailymotion embed demo](http://hapyak.github.com/hapyak-embed-api/examples/dailymotion-embed.html)
-* [VideoJS viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-viewer.html)
-* [VideoJS embed demo](http://hapyak.github.com/hapyak-embed-api/examples/videojs-embed.html)
-* [Brightcove embed demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-embed.html)
-* [Brightcove viewer demo](http://hapyak.github.com/hapyak-embed-api/examples/brightcove-viewer.html)
+* [Brightcove viewer example](http://hapyak.com/examples/brightcove-viewer.html)
+* [Brightcove editor example](http://hapyak.com/examples/brightcove-embed.html)
+* [Dailymotion viewer example](http://hapyak.com/examples/dailymotion-viewer.html)
+* [Dailymotion editor example](http://hapyak.com/examples/jplayer-embed.html)
+* [JPlayer viewer example](http://hapyak.com/examples/jplayer-viewer.html)
+* [JPlayer editor example](http://hapyak.com/examples/jplayer-embed.html)
+* [JWPlayer viewer example](http://hapyak.com/examples/jwplayer-viewer.html)
+* [JWPlayer editor example](http://hapyak.com/examples/jwplayer-embed.html)
+* [MediaElement viewer example](http://hapyak.com/examples/mediaelement-viewer.html)
+* [MediaElement editor example](http://hapyak.com/examples/mediaelement-embed.html)
+* [VideoJS viewer example](http://hapyak.com/examples/videojs-viewer.html)
+* [VideoJS editor example](http://hapyak.com/examples/videojs-embed.html)
+* [Wistia viewer example](http://hapyak.com/examples/wistia-viewer.html)
+* [Wistia editor example](http://hapyak.com/examples/wistia-embed.html)
+* [YouTube viewer example](http://hapyak.com/examples/youtube-viewer.html)
+* [YouTube editor example](http://hapyak.com/examples/youtube-embed.html)
