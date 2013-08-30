@@ -227,11 +227,11 @@ this parameter would be the YouTube video id.
 The URL of the video to load. If _videoType_ is set to "html5", this would be
 the URL to the video.
 
-**videoWidth**
+**videoWidth (optional)**
 
 The actual width of the video passed in. Used to compute aspect ratio.
 
-**videoHeight**
+**videoHeight (optional)**
 
 The actual height of the video passed in. Used to compute aspect ratio.
 
