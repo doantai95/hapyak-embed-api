@@ -105,7 +105,7 @@ If set to true, all track variables set by quizzes, clicks or iframe scripts wil
 **userId (optional, requires api key)**
 
 When using an api key, you can optionally pass in a userId. The userId should be some
-string identifier for one of your end users.
+string identifier for the user currently viewing the video.
 
 **groupId (optional, requires api key)**
 
@@ -275,7 +275,7 @@ If set to true, all track variables set by quizzes, clicks or iframe scripts wil
 **userId (optional, requires api key)**
 
 When using an api key, you can optionally pass in a userId. The userId should be some
-string identifier for one of your end users.
+string identifier for the user currently editing the video.
 
 **groupId (optional, requires api key)**
 
