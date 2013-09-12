@@ -431,6 +431,8 @@ on video.
 * [JPlayer editor example](http://hapyak.com/examples/jplayer-embed.html)
 * [JWPlayer viewer example](http://hapyak.com/examples/jwplayer-viewer.html)
 * [JWPlayer editor example](http://hapyak.com/examples/jwplayer-embed.html)
+* [Kaltura viewer example](http://hapyak.com/examples/kaltura-viewer.html)
+* [Kaltura editor example](http://hapyak.com/examples/kaltura-embed.html)
 * [MediaElement viewer example](http://hapyak.com/examples/mediaelement-viewer.html)
 * [MediaElement editor example](http://hapyak.com/examples/mediaelement-embed.html)
 * [VideoJS viewer example](http://hapyak.com/examples/videojs-viewer.html)
