@@ -122,6 +122,62 @@ hapyak.viewer({
 });
 ```
 
+### Event callbacks
+
+The viewer API triggers a number of event callbacks related to both video and data. An event callback may be registered by passing the event name to `addEventListener` (see below) or including the event callback as an option, with the name of the event preceeded by `on` as the key.
+
+For example, the `play` event, which fires whenever the video starts playing may be registered as an option:
+
+    hapyak.viewer({
+        /* ...other options here... */
+        onplay: function() {
+            console.log('video started playing');
+        }
+    });
+
+Another way to accomplish the same thing:
+
+    hapyak.viewer({
+        /* ...other options here... */
+        onload: function(viewer) {
+            viewer.addEventListener('play', function () {
+                console.log('video started playing');
+            });
+        }
+    });
+
+The advantages of using `addEventListener` are that multiple callback functions can be registered and that a listener can be removed with the `removeEventListener` method.
+
+The following events are available:
+
+**load**
+
+The `load` event fires when the viewer has loaded. The callback function receives one argument, which is the `HapyakViewer` object. (This event cannot be registered on with `addEventListener`.)
+
+**loadannotations**
+
+This event fires when all annotations have been loaded
+
+**durationchange**
+
+This event fires when the duration of the video is available to the API.
+
+**loadedmetadata**
+
+This event fires when the dimensions (height and width) and duration of the video are available to the API.
+
+**pause**
+
+This event fires when the video pauses.
+
+**play**
+
+This event fires when the video plays.
+
+**data**
+
+This event fires every time a data variable is changed. The callback function receives two arguments: an object hash of all data variables, and an object hash of all data variables that have changed since the last time the event fired.
+
 ### HapyakViewer
 
 A HapyakViewer object will be passed to the `onLoad` callback and supports the following methods and properties.
@@ -147,6 +203,16 @@ Pauses the video.
 **resetVariables()**
 
 Reset all track variables set by quizzes, clicks or iframe scripts.
+
+**getData(name)**
+
+Returns the value of the variable by `name`. If the method is called without any argument, it returns an object hash of all variable values.
+
+**setData(name, value)**
+
+Sets the value of the variable by `name`. If the second argument is omitted, the key value is cleared.
+
+If the first argument is `null` or if there is one parameter that is an object, that object is used as a hash of multiple variable values to be set.
 
 **destroy()**
 
@@ -268,7 +334,19 @@ This allows you to store this trackId and use it with _.viewer_ API calls.
 
 **resetVariables (optional)**
 
+**getData(name)**
+
+Returns the value of the variable by `name`. If the method is called without any argument, it returns an object hash of all variable values.
+
+**setData(name, value)**
+
+Sets the value of the variable by `name`. If the second argument is omitted, the key value is cleared.
+
+If the first argument is `null` or if there is one parameter that is an object, that object is used as a hash of multiple variable values to be set.
+
 If set to true, all track variables set by quizzes, clicks or iframe scripts will be cleared before loading.
+
+Note that on `HapyakEditor`, this method is asynchronous, so values that are set will not be  reflected by `getData` until the `data` event is triggered.
 
 ### Advanced Options
 
@@ -319,6 +397,61 @@ hapyak.editor({
     environment: 'production'
 });
 ```
+
+### Event callbacks
+
+The editor API triggers a number of event callbacks related to both video and data. An event callback may be registered by passing the event name to `addEventListener` (see below) or including the event callback as an option, with the name of the event preceeded by `on` as the key.
+
+For example, the `play` event, which fires whenever the video starts playing may be registered as an option:
+
+    hapyak.editor({
+        /* ...other options here... */
+        onplay: function() {
+            console.log('video started playing');
+        }
+    });
+
+Another way to accomplish the same thing:
+
+    var editor = hapyak.editor({
+        /* ...other options here... */
+    });
+    
+    editor.addEventListener('play', function () {
+        console.log('video started playing');
+    });
+
+The advantages of using `addEventListener` are that multiple callback functions can be registered and that a listener can be removed with the `removeEventListener` method.
+
+The following events are available:
+
+**load**
+
+The `load` event fires when the editor has loaded. The callback function receives one argument, which is the `HapyakViewer` object. (This event cannot be registered on with `addEventListener`.)
+
+**loadannotations**
+
+This event fires when all annotations have been loaded
+
+**durationchange**
+
+This event fires when the duration of the video is available to the API.
+
+**loadedmetadata**
+
+This event fires when the dimensions (height and width) and duration of the video are available to the API.
+
+**pause**
+
+This event fires when the video pauses.
+
+**play**
+
+This event fires when the video plays.
+
+**data**
+
+This event fires every time a data variable is changed. The callback function receives two arguments: an object hash of all data variables, and an object hash of all data variables that have changed since the last time the event fired.
 
 ### HapyakEditor
 
