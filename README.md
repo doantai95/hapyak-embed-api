@@ -3,8 +3,10 @@
 Include the following javascript reference in your project.
 
 ```html
-<script src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+HTTP <script src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+HTTPS <script src="https://d2qrdklrsxowl2.cloudfront.net/js/hapyak.gz.js"></script>
 ```
+
 
 ## Global Options
 
