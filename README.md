@@ -262,7 +262,8 @@ hapyak.viewer({
 });
 ```
 
-Complete details of the custom CDN support can be found at [this link](https://docs.google.com/document/d/1WVxaxQd1LzYpR-ew-Gd8qMIzJqAXD1vXEgzsGLRUffI/edit?usp=sharing).
+Reference [this document](https://docs.google.com/document/d/1WVxaxQd1LzYpR-ew-Gd8qMIzJqAXD1vXEgzsGLRUffI/edit?usp=sharing)
+for complete details.
 
 
 ## Editor API
