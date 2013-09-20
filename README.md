@@ -1,11 +1,18 @@
 # HapYak Javascript Embed API
 
-Include the following javascript reference in your project.
+Include the following javascript reference in your project. If embedding
+into an HTTP page, not HTTPS, use
 
 ```html
 HTTP <script src="http://cdn-assets.hapyak.com/js/hapyak.gz.js"></script>
+```
+
+If embedding into an HTTPS enabled page, use.
+
+```html
 HTTPS <script src="https://d2qrdklrsxowl2.cloudfront.net/js/hapyak.gz.js"></script>
 ```
+
 
 
 ## Global Options
