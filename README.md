@@ -242,7 +242,7 @@ The current time in the video of the play head, in seconds. This property can be
 
 A boolean value indicating the play/pause state of the video. A video may not be playing even though `paused` is false if the video is stalled while loading from the network. This property is read-only.
 
-### Custom CDN support (optional)
+### Custom CDN support
 
 HapYak supports an optional configuration directive to turn on a custom CDN prefix for serving assets, or api
 responses.
