@@ -121,28 +121,6 @@ string identifier for the user currently viewing the video.
 When using an api key, you can optionally pass in a groupId. The groupId should
 represent some subgroup of your end users.
 
-### Custom CDN support (optional)
-
-HapYak supports an optional configuration directive to turn on a custom CDN prefix for serving assets, or api
-responses.
-
-```javascript
-hapyak.viewer({
-    plugins: {
-        cdn: {
-            api: {
-                prefix: [urlprefix]
-            }
-            assets: {
-                prefix: [urlprefix]
-            }
-        }
-    }
-});
-```
-
-Complete details of the custom CDN support can be found at [this link](https://docs.google.com/document/d/1WVxaxQd1LzYpR-ew-Gd8qMIzJqAXD1vXEgzsGLRUffI/edit?usp=sharing).
-
 **environment (optional, for debugging)**
 
 Valid values are "production", "staging" or "feature". Only used when attempting to test against a specific environment.
@@ -263,6 +241,29 @@ The current time in the video of the play head, in seconds. This property can be
 **paused**
 
 A boolean value indicating the play/pause state of the video. A video may not be playing even though `paused` is false if the video is stalled while loading from the network. This property is read-only.
+
+### Custom CDN support (optional)
+
+HapYak supports an optional configuration directive to turn on a custom CDN prefix for serving assets, or api
+responses.
+
+```javascript
+hapyak.viewer({
+    plugins: {
+        cdn: {
+            api: {
+                prefix: [urlprefix]
+            }
+            assets: {
+                prefix: [urlprefix]
+            }
+        }
+    }
+});
+```
+
+Complete details of the custom CDN support can be found at [this link](https://docs.google.com/document/d/1WVxaxQd1LzYpR-ew-Gd8qMIzJqAXD1vXEgzsGLRUffI/edit?usp=sharing).
+
 
 ## Editor API
 
